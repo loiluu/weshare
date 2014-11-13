@@ -1,0 +1,11 @@
+old_stuffs/*
+old_stuffs/*.*
+extension/js/nacl/glibc
+box_server/.idea
+aes_scheme/js/newlib
+extension/js/nacl/Makefile
+*.pyc
+extension/js/extension_params.js
+extension/manifest.json
+*.o
+aes_scheme/js/nacl/newlib/*

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "BoxCryptor Simulator",
+  "description": "This extension simulates how BoxCryptor works.",
+  "version": "1.0",
+
+  "oauth2": {
+    "client_id": "559889679367-vjn375memptt76vmn8lna7bshuj4natd.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.box.com/api/oauth2/authorize"
+    ]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+    "https://api.box.com/*",
+    "https://upload.box.com/*",
+    "https://www.box.com/api/*",
+    "https://dl.boxcloud.com/*",
+    "http://localhost:8000/*",
+    "tabs",
+    "identity",
+    "cookies",
+    "storage",
+    "unlimitedStorage",
+    "http://54.186.188.1/"
+  ],
+
+  "web_accessible_resources": ["main.html"],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

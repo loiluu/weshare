@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+    <title>AES Scheme</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/weshare.css" type="text/css">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/box.js"></script>
+    <script src="js/basic_scheme.js"></script>
+    <script src="js/common_nacl.js"></script>
+    <script src="js/example_nacl.js"></script>
+
+</head>
+<body data-name="aes_scheme" data-tools="newlib glibc pnacl linux" data-configs="Debug Release" data-path="{tc}/{config}">
+    <header class="container-fluid pagination-centered">
+    <div id="listener"></div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav pull-right">
+                <li>
+                    <a id="login">
+                        <i class="icon-user"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h2>AES Scheme</h2>
+    <h2>Status: <code id="statusField">NO-STATUS</code></h2>
+    </header>
+    <div class="row-fluid">
+        <div class="span1"></div>
+        <div class="span8">
+            <div>
+                <ul  id="id_breadcrumb" class="breadcrumb">
+                    <li class="folder" lookup="0"><a>All File</a> <span class="divider">/</span></li>
+                </ul>
+            </div>
+            <div id="id_content"></div>
+        </div>
+        <div id="id_sidebar" class="span2">
+			<div id="display_infor"></div>
+		</div>
+    </div>
+    <div class="row-fluid">
+        <div class="span2"></div>
+        <div class="span8" id = "iframe" style="margin:0px;padding:0px;overflow:hidden;">
+        </div>
+        <div class="span2"></div>
+    </div>
+    <!--
+    This element will be populated with the messages that come from the NaCl
+    module. See example.js.
+    -->
+    <div id="log"></div>
+</body>
+</html>

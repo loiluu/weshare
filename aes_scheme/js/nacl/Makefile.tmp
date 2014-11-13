@@ -1,0 +1,19 @@
+all: temp_run
+temp_run: utils.o rsa.o openssl_aes.o temp.o
+	gcc -o temp_run temp.o rsa.o utils.o openssl_aes.o -lcrypto
+
+rsa.o: rsa.c
+	gcc -c rsa.c -lcrypto
+
+utils.o: utils.c
+	gcc -c utils.c
+
+openssl_aes.o: openssl_aes.c
+	gcc -c openssl_aes.c -lcrypto
+
+temp.o: temp.c
+	gcc -c temp.c
+
+clean:
+	\rm *.o
+	\rm temp_run   
